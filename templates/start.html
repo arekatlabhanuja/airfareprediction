@@ -1,0 +1,46 @@
+{% include 'header.html' %}
+
+	
+	<!-- Home -->
+<style>
+.table-responsive 
+{
+	max-height:400px;
+	scrollY: 200px;
+	table.dataTable thead .sorting:after,
+	table.dataTable thead .sorting:before,
+	table.dataTable thead .sorting_asc:after,
+	table.dataTable thead .sorting_asc:before,
+	table.dataTable thead .sorting_asc_disabled:after,
+	table.dataTable thead .sorting_asc_disabled:before,
+	table.dataTable thead .sorting_desc:after,
+	table.dataTable thead .sorting_desc:before,
+	table.dataTable thead .sorting_desc_disabled:after,
+	table.dataTable thead .sorting_desc_disabled:before {
+	bottom: .5em;
+	}	
+}
+</style>
+	<div class="home" style='height:200px;'>
+		<div class="background_image" style="background-image:url(/static/images/destinations.jpg)">
+		</div>
+	</div>
+		<div>
+	<h2>data</h2>
+{% for table in tables2 %}
+            {{titles2[loop.index]}}
+            {{ table|safe }}
+{% endfor %}
+		</div>
+<hr/>
+		
+
+{{fptr}} 
+<hr/>
+{{fpte}}
+<hr/>
+			<a href='/train' class='btn btn-success'>Start Multi-Classifier Training and Validation</a>
+	<!-- Footer -->
+
+{% include 'footer.html' %}
+

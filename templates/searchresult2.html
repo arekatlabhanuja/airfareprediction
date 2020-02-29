@@ -1,0 +1,60 @@
+{% include 'header.html' %}
+
+	
+	<!-- Home -->
+<style>
+.table{
+  font-size: 20px;
+}
+.table-responsive 
+{
+	max-height:400px;
+	scrollY: 200px;
+	table.dataTable thead .sorting:after,
+	table.dataTable thead .sorting:before,
+	table.dataTable thead .sorting_asc:after,
+	table.dataTable thead .sorting_asc:before,
+	table.dataTable thead .sorting_asc_disabled:after,
+	table.dataTable thead .sorting_asc_disabled:before,
+	table.dataTable thead .sorting_desc:after,
+	table.dataTable thead .sorting_desc:before,
+	table.dataTable thead .sorting_desc_disabled:after,
+	table.dataTable thead .sorting_desc_disabled:before {
+	bottom: .5em;
+	}	
+}
+</style>
+
+	<div class="home" style='height:200px;'>
+		<div class="background_image" style="background-image:url(/static/images/destinations.jpg)">
+		</div>
+	</div>
+		<div>
+	
+	<h2>Modest Price</h2>
+	
+<div class='row'>
+	<div class='col-md-3'></div>
+	<div class='col-md-6'>
+{% for table in tables %}
+            {{titles[loop.index]}}
+            {{ table|safe }}
+{% endfor %}
+	</div>
+	<div class='col-md-3'></div>
+</div>
+<div class='row'>
+	<div class='col-md-12'>
+		<br/><br/><br/>
+	</div>
+</div>
+		</div>
+
+		<!--<a href='/start' class='btn btn-success'>Train Test Split</a>-->
+
+
+
+	<!-- Footer -->
+
+{% include 'footer.html' %}
+

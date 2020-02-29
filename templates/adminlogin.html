@@ -1,0 +1,97 @@
+{% include 'header.html' %}
+
+	
+	<!-- Home -->
+
+	<div class="home" style=" height:300px;" >
+		<div class="background_image" style=" background-image:url(/static/images/contact.jpg)"></div>
+	</div>
+
+	<!-- Search -->
+<!--
+	<div class="home_search">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="home_search_container">
+						<div class="home_search_title">Search for your trip</div>
+						<div class="home_search_content">
+							<form action="#" class="home_search_form" id="home_search_form">
+								<div class="d-flex flex-lg-row flex-column align-items-start justify-content-lg-between justify-content-start">
+									<input type="text" class="search_input search_input_1" placeholder="City" required="required">
+									<input type="text" class="search_input search_input_2" placeholder="Departure" required="required">
+									<input type="text" class="search_input search_input_3" placeholder="Arrival" required="required">
+									<input type="text" class="search_input search_input_4" placeholder="Budget" required="required">
+									<button class="home_search_button">search</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+-->
+
+	<!-- Contact -->
+
+	<div class="contact">
+		<div class="container">
+			<div class="row">
+
+				<!-- Get in touch -->
+				<div class="col-lg-6">
+					<div class="contact_content">
+						<div class="contact_title">Admin Login</div>
+						<div class="contact_text">
+							<p>Predict the best flight ticket prices.</p>
+						</div>
+						<div class="contact_list">
+							<ul>
+								<li>
+									<div>Mumbai</div>
+									<div>...</div>
+								</li>
+								<li>
+									<div>Dubai</div>
+									<div>...</div>
+								</li>
+								<li>
+									<div>...</div>
+									<div>...</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Contact Form -->
+				<div class="col-lg-6">
+					<div class="contact_form_container">
+						<form action="adminlogin" method="post" id="contact_form" class="contact_form">
+							<div style="margin-bottom: 18px">
+							<input type="text" class="contact_input contact_input_name inpt" placeholder="Your Email" name="email" required="required"><div class="input_border"></div></div>
+							<input type="password" class="contact_input contact_input_name inpt" placeholder="Password" name="pwd" required="required"><div class="input_border"></div></div>
+							<button class="contact_button">Login</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Map -->
+
+	<div class="contact_map">
+		<!-- Google Map -->
+		<div class="map">
+			<div id="google_map" class="google_map">
+				<div class="map_container">
+					<div id="map"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+{% include 'footer.html' %}
